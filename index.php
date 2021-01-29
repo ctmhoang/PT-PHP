@@ -1,11 +1,8 @@
 <?php
- 
+
 $name = "Cameron";
 $age = 20;
 
-echo $age;
+echo "Hello world my name is $name " . 'and my age is ' . $age;
 
-// This is a comment 
-$sentence = $name . " is my name";
-
-print $sentence;
+$array = [true, 12.12, true, 1];
