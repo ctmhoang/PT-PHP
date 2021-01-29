@@ -12,6 +12,9 @@
 * Not start with numbers | special characters
 * Should start with upper| lower case | underscore
 
+### Constant
+* `define('Name', 'Value');`
+
 ## Magic Quotation
 * Placeholder string like js use quotation
 * Literal string (print dollar sign) use apostrophe

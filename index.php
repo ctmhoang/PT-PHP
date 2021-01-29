@@ -1,8 +1,14 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$name = "Cameron";
-$age = 20;
+$variable = "overwritten";
+$variable = "anything";
 
-echo "Hello world my name is $name " . 'and my age is ' . $age;
+echo $variable;
 
-$array = [true, 12.12, true, 1];
+define('__NAME__', 'Cameron');
+// define('__NAME__', 'Luna');
+
+echo "Hello world my name is ". __NAME__;
+
