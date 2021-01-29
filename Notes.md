@@ -60,3 +60,6 @@
 ## Function
 * Default value in parameter `$name = value`
 * Specifing names of arguments when passing in DOES NOTHING (verbosity)
+
+## Super Global Variables
+* Access with `$_GET|POST|REQUEST['name']`
