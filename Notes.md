@@ -7,6 +7,10 @@
 * No such thing as dot notation
 * Single line comment starts with 2 slashes or hash| pound sympol
 * Multiple line comment within /**/
+* `exit` exit the execution
+
+# Unique
+* Does not have closure
 
 ### Variable
 * Not start with numbers | special characters
@@ -49,3 +53,10 @@
 * while loop
 * foreach loop
     * `foreach ($collection as $e)`
+
+## Comparison
+* Has both strict and loose comparison
+
+## Function
+* Default value in parameter `$name = value`
+* Specifing names of arguments when passing in DOES NOTHING (verbosity)

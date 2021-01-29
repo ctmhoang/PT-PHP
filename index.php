@@ -1,25 +1,12 @@
 <?php
 
 
-$array = [
-    'name' => 'Cameron',
-    'age' => 20
-];
-$array1 = [
-    'name' => 'Eric',
-    'age' => 68
-];
+function welcome($name = "Allen", $age = 21){
+    return "Hello $name your age is $age<br>";
+}
 
-$nested = [$array, $array1];
+echo welcome();
 
-foreach ($nested as $p) {
-    switch ($p['name']) {
-        case 'Cameron':
-            echo 'That\' me <br>';
-            break;
-        case 'Eric':
-            echo 'Best Professor';
-        default:
-            echo ' always grumpy<br>';
-    }
+for($i = 0; $i < 5 ; $i ++){
+    echo welcome($age = $i, $name = "Name here"); //order matters
 }
