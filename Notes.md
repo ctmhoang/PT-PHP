@@ -42,3 +42,10 @@
 
 ## Associative Array
 * Fat Arrow 🤣
+
+## Loop
+* For loop
+* do while loop
+* while loop
+* foreach loop
+    * `foreach ($collection as $e)`
