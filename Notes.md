@@ -35,3 +35,10 @@
 
 ## Function
 * `echo` & `print` to print
+* `print_r` print human-readable
+
+## Array
+* Define `[]` `array()`
+
+## Associative Array
+* Fat Arrow 🤣
