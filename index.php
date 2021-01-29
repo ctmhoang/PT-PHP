@@ -1,20 +1,25 @@
 <?php
+
+
 $array = [
     'name' => 'Cameron',
     'age' => 20
 ];
 $array1 = [
-    'name' => 'Cameron',
-    'age' => 20
+    'name' => 'Eric',
+    'age' => 68
 ];
 
 $nested = [$array, $array1];
-print_r($nested); 
-exit;
-foreach ($array as $k => $v) {
-    echo "$k. $v</br>";
-}
 
-foreach($array as $v){
-    echo $v;
+foreach ($nested as $p) {
+    switch ($p['name']) {
+        case 'Cameron':
+            echo 'That\' me <br>';
+            break;
+        case 'Eric':
+            echo 'Best Professor';
+        default:
+            echo ' always grumpy<br>';
+    }
 }
