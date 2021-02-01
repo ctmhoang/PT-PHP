@@ -1,12 +1,12 @@
+<form method="POST">
+    <label for="name">Name: <input type="text" name="name" id="name"></label>
+    <br>
+    <label for="age">Age: <input type="number" name="age" id="age"></label>
+    <br>
+    <button>Submit</button>
+</form>
+
 <?php
-
-
-function welcome($name = "Allen", $age = 21){
-    return "Hello $name your age is $age<br>";
-}
-
-echo welcome();
-
-for($i = 0; $i < 5 ; $i ++){
-    echo welcome($age = $i, $name = "Name here"); //order matters
+if (isset($_POST['name'])) {
+    echo $_POST['name'] . ' is ' . $_POST['age'] . ' years old';
 }

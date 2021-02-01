@@ -63,3 +63,6 @@
 
 ## Super Global Variables
 * Access with `$_GET|POST|REQUEST['name']`
+
+## Form
+* `$_REQUEST` = `$_GET` | '$_POST'
