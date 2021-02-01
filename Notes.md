@@ -69,10 +69,11 @@
 ## Function
 * Default value in parameter `$name = value`
 * Specifing names of arguments when passing in DOES NOTHING (verbosity)
+* reference use `&`
 
 ## Super Global Variables
 * Access with `$_GET|POST|REQUEST['name']`
 
 ## Form
 * `$_REQUEST` = `$_GET` | '$_POST'
-* inject `<?= value?>` use `htmlentites($value)`
+* Avoid HTML inject `<?= value?>` use `htmlentites($value)`
