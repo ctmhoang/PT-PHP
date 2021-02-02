@@ -74,6 +74,11 @@
 
 ## Super Global Variables
 * Access with `$_GET|POST|REQUEST['name']`
+* `$_COOKIE`
+    * `setcookie('key','val',time()+?)`
+* `$_SESSION`
+    * `session_start()` in the model
+    * `session_destroy()`
 
 ## Form
 * `$_REQUEST` = `$_GET` | '$_POST'
