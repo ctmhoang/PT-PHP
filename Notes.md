@@ -48,6 +48,7 @@
 * `echo` & `print` to print
 * `print_r` print human-readable
 * `var_dump` 
+* `error_log`
 * `function_existes("name")`
 
 ## Array
