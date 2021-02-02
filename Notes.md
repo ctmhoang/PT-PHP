@@ -77,3 +77,16 @@
 ## Form
 * `$_REQUEST` = `$_GET` | '$_POST'
 * Avoid HTML inject `<?= value?>` use `htmlentites($value)`
+
+## Error reporting
+* `error_reporting(E_ALL);`
+* `ini_set('display_errors', 1);` 
+* PDO `$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);`
+
+## PDO
+* Insert | Delete
+    * `prepare`
+    * `execute`
+* Query
+    * `query`
+    * `fetch(PDO::FETCH_ASSOC)` (This mode is useful in most situations)
