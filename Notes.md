@@ -80,6 +80,13 @@
     * `session_start()` in the model
     * `session_destroy()`
 
+### Cookieless
+* Passing session ID via Post or Get
+* `init_set`
+    * `session.use_cookies,0`
+    * `session.use_only_cookies,0`
+    * `session.use_trans_sid,1`
+
 ## Form
 * `$_REQUEST` = `$_GET` | '$_POST'
 * Avoid HTML inject `<?= value?>` use `htmlentites($value)`
@@ -96,3 +103,6 @@
 * Query
     * `query`
     * `fetch(PDO::FETCH_ASSOC)` (This mode is useful in most situations)
+## Modularity
+* `require` or `include`
+* `_once` lib
