@@ -113,6 +113,8 @@
 ## Class
 * `property_exists($obj,$key)`
 * `method_exists)('')`
+* has VAL
+* `this` ins `self` cla
 
 ## Magic Methods
 * `__constructor`
@@ -136,9 +138,18 @@
    * `method_exists($obj,$methodName)` <br> excec `$obj->{$methodName}`
    * Create presenter
       * Access any method as property
- * `__toString()`
+* `__toString()`
    * repr string of obj
    * Can be use for json encode
    * Prototype UI attributes
  * `__unset($key)`
    * like `__isset`
+* `__call($name,$args)`
+   * calling a method that does not exist
+   * Use for decorator, dynamic method name
+* `static __callStatic($name,$args)`
+   * Facede technique
+* `__debugInfo()`
+   * overwrite `var_dump()`
+   * `get_object_vars`
+
