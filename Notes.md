@@ -90,6 +90,7 @@
 ## Form
 * `$_REQUEST` = `$_GET` | '$_POST'
 * Avoid HTML inject `<?= value?>` use `htmlentites($value)`
+   * Do not call it after we put in the db, call it after we take data out of the db
 
 ## Error reporting
 * `error_reporting(E_ALL);`
