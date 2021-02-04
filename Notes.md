@@ -11,6 +11,8 @@
 
 # Unique
 * Does not have closure
+* Have different syntax `abstract am func name`
+* Use `parent` instead of `super`
 
 ### Variable
 * Not start with numbers | special characters
@@ -107,3 +109,36 @@
 ## Modularity
 * `require` or `include`
 * `_once` lib
+
+## Class
+* `property_exists($obj,$key)`
+* `method_exists)('')`
+
+## Magic Methods
+* `__constructor`
+   * `new` operator
+   * Setting things up
+   * Dependencies injection
+   * Inhertion
+* `__invoke`
+   * `is_callable`
+   * Can take args in signature
+   * Dont wanna give a method name
+   * Tidy things up
+* `__isset($key)`
+   * Check attribute is set
+* `__set($key,$value)`
+   * Intervene of setting up props
+   * use this syntax `$obj->data[key] = value`
+   * set property internally `$this->{$key}`
+* `__get($key)`
+   * Like  `__set` access
+   * `method_exists($obj,$methodName)` <br> excec `$obj->{$methodName}`
+   * Create presenter
+      * Access any method as property
+ * `__toString()`
+   * repr string of obj
+   * Can be use for json encode
+   * Prototype UI attributes
+ * `__unset($key)`
+   * like `__isset`
