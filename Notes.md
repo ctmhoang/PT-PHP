@@ -116,6 +116,16 @@
 * has VAL
 * `this` ins `self` cla
 
+## Trait 
+* Like class
+* grouping methods in a fine-grained and reliable way
+
+## New ???
+* static 
+   * whatever class in the hierarchy you called the method on.
+* self 
+   & the actual class
+
 ## Magic Methods
 * `__constructor`
    * `new` operator
@@ -158,3 +168,9 @@
    * clean up
    * dispatch job
    * nomad model
+* `__sleep` `__wakeup`
+   * `un/serialize` class (`base64_encode`)
+   * Customize data when un/serialize
+* `static __set_state`
+   * `var_export` -> export exec code
+   * cache `file_put_contents`
