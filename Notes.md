@@ -186,6 +186,10 @@
 * Array Deconstruction
    * Use `list` or `[]` no key
    * `[key=>$varName]` has Key
+   * Skip `,,`
+   * Building `$var = [,] = [,]`
+   * Nested use `[]`
+   * `merge` last , `+` first
 * Can use negative offset
 * `void`,`iterable` Type
 * Cons visibility
@@ -193,3 +197,11 @@
 * Random num `mt_rand` `array_rand`
 * Iterable imp `IteratorAggregate` `getIterator` `ArrayIterator`
 * Callback `callable`
+## Arrow Function
+* `fn() => returnval`
+* has scope of outer function
+* Mul expr `[]`
+* `compact`
+* Can use type hinting
+* `declare(strict_types=1)`
+* `use ()` into scope of closure
