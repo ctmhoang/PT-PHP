@@ -115,6 +115,8 @@
 * `method_exists)('')`
 * has VAL
 * `this` ins `self` cla
+* `instance of`
+
 
 ## Trait 
 * Like class
@@ -174,3 +176,20 @@
 * `static __set_state`
    * `var_export` -> export exec code
    * cache `file_put_contents`
+# PHP 7.0+
+* Expected return type
+	* `signature : type`
+	* `signature : ? type` potential null value
+* Parameter type 
+	* Like Java
+   * Can be Null `? Type`
+* Array Deconstruction
+   * Use `list` or `[]` no key
+   * `[key=>$varName]` has Key
+* Can use negative offset
+* `void`,`iterable` Type
+* Cons visibility
+* Group Exception Catching ( Like java)
+* Random num `mt_rand` `array_rand`
+* Iterable imp `IteratorAggregate` `getIterator` `ArrayIterator`
+* Callback `callable`
