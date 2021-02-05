@@ -152,4 +152,9 @@
 * `__debugInfo()`
    * overwrite `var_dump()`
    * `get_object_vars`
-
+* `__clone`
+   * use for deep clone
+* `__destruct`
+   * clean up
+   * dispatch job
+   * nomad model
